@@ -129,6 +129,10 @@ html,
     opacity: 0.5;
 }
 
+.gh-card-content p {
+    font-family: var(--font-serif);
+}
+
 
 /* Page
 /* ---------------------------------------------------------- */

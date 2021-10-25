@@ -1,3 +1,26 @@
+
+# amador-ghost
+### A Ghost theme project based on the Ghost Starter Theme
+
+What I am doing with this project:
+
+1. Learning more about HTML/CSS/JS
+2. Learning about the current web development tooling includig:
+    - Gulp
+    - NPM modules
+4. Learning how to use git and Github to manage a project
+5. Learning how to balance all of this against other projects
+
+
+&nbsp;
+&nbsp;
+&nbsp;
+
+
+
+Everything below ⬇️ is from the original README.md file provided by Ghost.
+
+----
 # Ghost Starter Theme
 
 A starter framework for Ghost themes! Fork this repository and start your development here with all the main things you need to develop a custom Ghost theme.

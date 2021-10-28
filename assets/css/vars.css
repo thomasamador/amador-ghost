@@ -3,13 +3,41 @@
 
 :root {
 
+
+    /* TODO Remove semantic names on base and primary */
+    /* TODO reorganize colors after checking css references */
+    
     /* Colours */
-    --color-primary: var(--ghost-accent-color, #3eb0ef);
-    --color-base: #131313;
-    --color-border: #ddd;
-    --color-bg: #f5f5f5;
-    --color-success: #80b912;
-    --color-error: #f05230;
+    --color-primary: var(--ghost-accent-color, #3eb0ef);  
+    /* ? base = text color? Where is this being used? */
+    --color-base: hsl(0,0%,7.5%);
+    --color-border: hsl(0, 0%, 87%);
+    --color-bg: hsl(0, 0%, 96%);
+    --color-success: hsl(80, 82%, 40%);
+    --color-error: hsl(11, 86%, 56%);
+    
+    /* * Added colors *  */
+
+    --color-secondary: hsl(260, 33%, 46%);
+    --color-text-light: hsl(0, 0%, 90%);
+    --color-text-dark: hsl(240, 2%, 12%);
+    --color-text-gray: hsl(240, 2%, 35%);
+    --color-info: hsl(211, 65%, 50%);
+    --color-warning: hsl(38, 96%, 58%);
+    
+    /* * Grays * */
+    /* color scale via Colorbox from Lyft */
+    --color-gray-00: hsl(75, 100%, 99%);
+    --color-gray-01: hsl(94, 15%, 91%);
+    --color-gray-02: hsl(150, 4%, 67%);
+    --color-gray-03: hsl(195, 2%, 45%);
+    --color-gray-04: hsl(240, 2%, 24%);
+    
+    /* * Surfaces * */
+    --surface-warm-00: hsl(44, 100%, 98%);
+    --surface-warm-01: hsl(49, 58%, 96%);
+    --surface-warm-02: hsl(49, 41%, 95%);
+    
 
     /* Fonts */
     --font-sans-serif: acumin-pro, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
@@ -19,6 +47,17 @@
     --font-normal: 400;
     --font-bold: 700;
     --font-heavy: 800;
+
+    /* * Font scale */
+    --font-ratio: 1.45;
+    --font-size-01: calc( 1rem * var(--font-ratio));
+    --font-size-02: calc( var( --font-size-01) * var(--font-ratio));
+    --font-size-03: calc( var( --font-size-02) * var(--font-ratio));
+    --font-size-04: calc( var( --font-size-03) * var(--font-ratio));
+    --font-size-05: calc( var( --font-size-04) * var(--font-ratio));
+    --font-size-06: calc( var( --font-size-05) * var(--font-ratio));
+    
+
 
     /* Breakpoints */
     --xlarge: 1680px;
@@ -31,5 +70,15 @@
     --height: 4rem;
     --margin: 2rem;
     --radius: 0.5rem;
+
+    /* * Spacing * */
+    --space-s: .5rem;
+    --space-m: 1rem;
+    --space-l: 1.5rem;
+    --space-xl: 2rem;
+    --space-huge: 3rem;
+    --space-mega: 4rem;
+    --space-stupid: 5rem;
+
 
 }

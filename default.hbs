@@ -1,42 +1,69 @@
 <!DOCTYPE html>
+{{!-- Setting the site language via the admin panel setting and @site --}}
 <html lang="{{@site.locale}}">
-<head>
 
+
+<head>
+    {{!-- Boilerplate head HTML --}}
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{!-- Link to stylesheet with the asset helper --}}
     <link rel="stylesheet" type="text/css" href="{{asset "built/screen.css"}}" />
 
+    {{!-- The title of the post is used as the title of the page. meta_title is set in admin or post title is used --}}
     <title>{{meta_title}}</title>
-
-    {{ghost_head}}
+    
     {{!-- Outputs important meta data and settings, should always be in <head> --}}
+    {{ghost_head}}
+    
 
 </head>
+
+{{!-- * Outputs different classes on different pages, depending on what context the page belongs to. --}}
 <body class="{{body_class}}">
+    
+
 <div class="gh-viewport">
 
 <header id="gh-head" class="gh-head">
+
+    {{!-- Navigation --}}
     <nav class="gh-head-inner gh-container">
 
+        {{!-- Branding set in admin panel --}}
         <div class="gh-head-brand">
+            
+            {{!-- @site provides access to global settings defined in your admin panel and available everywhere in your theme. --}}
             <a class="gh-head-logo" href="{{@site.url}}">
+
+                {{!-- If you have added a logo in admin pane,l show the logo if not, show the title. --}}
                 {{#if @site.logo}}
                     <img src="{{@site.logo}}" alt="{{@site.title}}" />
                 {{else}}
                     {{@site.title}}
                 {{/if}}
             </a>
+            
+            {{!-- Mobile burger menu --}}
             <a class="gh-burger" role="button">
                 <div class="gh-burger-box">
                     <div class="gh-burger-inner"></div>
                 </div>
             </a>
+        
         </div>
+        
+        
         <div class="gh-head-menu">
+            {{!-- Formats the navigation menu items defined in Ghost admin panel. Customized with partials/navigation.hbs  --}}
             {{navigation}}
         </div>
+        
+
         <div class="gh-head-actions">
+            {{!-- Social media buttons. URLs added via Ghost admin panel.  --}}
             <div class="gh-head-actions-list">
                 {{#if @site.facebook}}
                 <a href="{{facebook_url @site.facebook}}" title="Facebook" target="_blank" rel="noopener">{{> "icons/facebook"}}</a>
@@ -58,6 +85,7 @@
 </main>
 
 <footer class="gh-foot">
+    {{!-- Footer  --}}
     <div class="gh-container">
         <div class="gh-foot-menu">
             {{navigation}}
@@ -72,6 +100,7 @@
 
 {{!-- <foot> --}}
 
+{{!-- various assets loaded via the asset helper --}}
 <script src="{{asset "built/jquery-3.4.1.min.js"}}"></script>
 
 {{#if pagination.pages}}

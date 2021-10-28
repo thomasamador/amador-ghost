@@ -148,7 +148,7 @@ h6 {
 }
 
 h1 {
-    font-size: 3.6rem;
+    font-size: var( --font-size-05);
     letter-spacing: -0.5px;
 }
 @media (max-width: 500px) {

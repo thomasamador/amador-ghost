@@ -60,6 +60,7 @@ html,
     margin: 0 auto;
 }
 
+/* .gh-head-actions is social media crap */
 .gh-head-actions a {
     display: inline-flex;
     align-items: center;

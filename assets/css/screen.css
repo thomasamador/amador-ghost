@@ -106,7 +106,7 @@ This is the 'home' page in the Starter theme.
 .gh-card-meta {
     display: block;
     margin: 0 0 1rem;
-    font-size: var(--font-size-01);
+    font-size: var(--font-size-00);
     line-height: 1.2em;
     letter-spacing: 0.5px;
     text-transform: uppercase;

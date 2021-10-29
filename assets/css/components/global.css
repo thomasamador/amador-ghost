@@ -10,7 +10,8 @@
 html {
     overflow-x: hidden;
     overflow-y: scroll;
-    font-size: 62.5%;
+    /* ? Do I need to declare a font size on the root HTML element? */
+    /* font-size: 1em; */
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
@@ -18,10 +19,10 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    color: color-mod(var(--color-base) l(+20%));
+    color: color-mod(var(--color-base) l(+15%));
     font-family: var(--font-sans-serif);
-    font-size: 1.5rem;
-    line-height: 1.6em;
+    font-size: var(--font-size-01);
+    line-height: 1.4em;
     font-weight: 400;
     font-style: normal;
     background: #fff;
@@ -100,7 +101,7 @@ mark {
 }
 
 small {
-    font-size: 80%;
+    font-size: var(--font-size-00);
 }
 
 sub,
@@ -136,6 +137,10 @@ a[class]:hover {
     transition: 0.2s ease;
 }
 
+
+/* * Headings sizes */
+/* ---------------------------------------------------------- */
+
 h1,
 h2,
 h3,
@@ -148,36 +153,38 @@ h6 {
 }
 
 h1 {
-    font-size: var( --font-size-05);
-    letter-spacing: -0.5px;
+    font-size: var( --font-size-03);
+    /* letter-spacing: -0.5px; */
 }
-@media (max-width: 500px) {
-    h1 {
-        font-size: 2.7rem;
+@media (min-width: 500px) {
+    h1, h2, h3, h4 {
+        --font-ratio: 1.6;
     }
 }
 
+
 h2 {
-    font-size: 3.6rem;
+    font-size: var(--font-size-02);
 }
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
     h2 {
         font-size: 2.2rem;
     }
-}
+} */
 
 h3 {
-    font-size: 3.2rem;
+    font-size: var(--font-size-01);
 }
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
     h3 {
         font-size: 1.8rem;
     }
-}
+} */
 
 h4 {
-    font-size: 2.6rem;
+    font-size: var(--font-size-00);
 }
+
 
 h5 {
     font-size: 2.4rem;
@@ -186,6 +193,7 @@ h5 {
 h6 {
     font-size: 2.2rem;
 }
+
 
 /* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {

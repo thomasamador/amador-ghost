@@ -44,6 +44,8 @@ html,
 
 .gh-page {
     padding: 0 4vmin;
+    /* ? What happens when I add color here? */
+    /* background-color: var(--surface-warm-02); */
 }
 
 .gh-article {
@@ -81,7 +83,8 @@ html,
     height: 2rem;
 }
 
-/* Index
+/* Index 
+This is the 'home' page in the Starter theme.
 /* ---------------------------------------------------------- */
 
 .gh-card:not(:first-child) {
@@ -103,7 +106,7 @@ html,
 .gh-card-meta {
     display: block;
     margin: 0 0 1rem;
-    font-size: 1.4rem;
+    font-size: var(--font-size-01);
     line-height: 1.2em;
     letter-spacing: 0.5px;
     text-transform: uppercase;
@@ -113,16 +116,19 @@ html,
 .gh-card-content {
     max-width: 720px;
     margin: 0 auto;
-    text-align: center;
-    font-size: 1.6rem;
+    text-align: left;
+    /* font-size: 1.6rem; */
+    /* font-size:inherit; */
 }
 
 .gh-card-content p {
-    margin: 1.2rem 0;
-    padding: 0 6vmin;
+    /* margin: 1.2rem 0; */
+    margin: var(--space-m) 0;
+    /* padding: 0 4vmin; */
+    /* padding: 0 var(--space-s); */
 }
 
-.gh-card-content > strong {
+ .gh-card-content > strong {
     display: inline-block;
     padding: 1px 0;
     font-weight: 500;

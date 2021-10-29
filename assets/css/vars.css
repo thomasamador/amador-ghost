@@ -9,8 +9,7 @@
     
     /* Colours */
     --color-primary: var(--ghost-accent-color, #3eb0ef);  
-    /* ? base = text color? Where is this being used? */
-    --color-base: hsl(0,0%,7.5%);
+    --color-base: rgb(21, 21, 21);
     --color-border: hsl(0, 0%, 87%);
     --color-bg: hsl(0, 0%, 96%);
     --color-success: hsl(80, 82%, 40%);
@@ -36,11 +35,11 @@
     /* * Surfaces * */
     --surface-warm-00: hsl(44, 100%, 98%);
     --surface-warm-01: hsl(49, 58%, 96%);
-    --surface-warm-02: hsl(49, 41%, 95%);
+    --surface-warm-02: hsl(57, 45%, 92%);
     
 
     /* Fonts */
-    --font-sans-serif: acumin-pro, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    --font-sans-serif: acumin-pro-condensed, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     --font-serif: ff-meta-serif-web-pro, Georgia, Times, serif;
     --font-mono: Menlo, Courier, monospace;
     --font-light: 100;
@@ -49,7 +48,8 @@
     --font-heavy: 800;
 
     /* * Font scale */
-    --font-ratio: 1.45;
+    --font-ratio: 1.2;
+    --font-size-00: calc( .9rem / var(--font-ratio));
     --font-size-01: calc( 1rem * var(--font-ratio));
     --font-size-02: calc( var( --font-size-01) * var(--font-ratio));
     --font-size-03: calc( var( --font-size-02) * var(--font-ratio));

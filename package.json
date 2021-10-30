@@ -718,6 +718,6 @@
     "ghost-theme"
   ],
   "author": "Thomas Amador",
-  "author-email": "thomasamador@gmail.com",
+  "author.email": "thomasamador@gmail.com",
   "license": "MIT"
 }

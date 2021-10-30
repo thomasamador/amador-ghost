@@ -73,7 +73,7 @@ function js(done) {
         src('assets/js/*.js', {sourcemaps: true}),
         uglify(),
         dest('assets/built/', {sourcemaps: '.'}),
-        // livereload(),
+        
         
     ], handleError(done));
 }

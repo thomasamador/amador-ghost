@@ -3,7 +3,7 @@
 
 .gh-head {
     padding: 3vmin 4vmin;
-    font-size: 1.6rem;
+    font-size: var( --font-size-02);
     line-height: 1.3em;
     background: inherit;
 }
@@ -37,7 +37,7 @@
     display: block;
     padding: 10px 0;
     font-weight: 900;
-    font-size: var(--font-size-002);
+    font-size: 1rem;
     line-height: 1.2em;
 }
 
@@ -258,7 +258,7 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner::after {
         user-select: none;
     }
     #gh-head .gh-head-logo {
-        font-size: 2.2rem;
+        font-size: 1.2rem;
     }
     #gh-head .gh-head-logo img {
         max-height: 40px;
@@ -271,7 +271,7 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner::after {
         text-align: center;
         margin: 0 0 10vh 0;
         font-weight: 300;
-        font-size: 3.6rem;
+        font-size: 1.6rem;
         line-height: 1.1em;
     }
     #gh-head .gh-head-menu .nav li {

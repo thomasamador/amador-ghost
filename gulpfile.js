@@ -46,7 +46,7 @@ function hbs(done) {
         src(['*.hbs', '**/**/*.hbs', '!node_modules/**/*.hbs']),
         browsersync.reload(),
     ], handleError(done));
-    // **** Could I use 'browsersync.reload();' here? ****
+    browsersync.reload();
 }
 
 // css processor 

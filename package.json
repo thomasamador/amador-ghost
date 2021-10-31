@@ -1,6 +1,6 @@
 {
   "name": "amador-ghost",
-  "version": "1.0.0",
+  "version": "0.5.2",
   "description": "A flexible Ghost theme",
   "main": "gulpfile.js",
   "dependencies": {
@@ -719,5 +719,13 @@
   ],
   "author": "Thomas Amador",
   "author.email": "thomasamador@gmail.com",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomasamador/amador-ghost.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thomasamador/amador-ghost/issues"
+  },
+  "homepage": "https://github.com/thomasamador/amador-ghost#readme"
 }

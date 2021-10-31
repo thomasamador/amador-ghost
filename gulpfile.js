@@ -22,8 +22,8 @@ var easyimport = require('postcss-easy-import');
 // start browsersync server
 function serve (done) {
     browsersync.init({
-         proxy: "localhost:2368",
-         browser: "Firefox Developer Edition",
+        proxy: "localhost:2369",
+        browser: "Firefox Developer Edition",
          reloadOnRestart: true
 
     });

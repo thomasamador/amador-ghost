@@ -87,6 +87,8 @@ html,
 This is the 'home' page in the Starter theme.
 /* ---------------------------------------------------------- */
 
+
+/* Apply 8vmin top margin to to all cards that aren't first in the list */
 .gh-card:not(:first-child) {
     margin: 8vmin auto 0;
 }
@@ -94,28 +96,32 @@ This is the 'home' page in the Starter theme.
 .gh-card-link {
     display: flex;
     flex-direction: column;
+    
 }
 
 .gh-card-image {
     width: 100%;
-    max-height: 700px;
-    object-fit: cover;
+    /* height: 25vmax; */
+    max-height: 75vmin;
+    max-width: 30vmax;
+    object-fit: contain;
     margin-bottom: 4vmin;
+    margin: auto;
 }
 
 .gh-card-meta {
     display: block;
-    margin: 0 0 1rem;
+    margin: var(--space-m) 0;
     font-size: var(--font-size-00);
-    line-height: 1.2em;
-    letter-spacing: 0.5px;
+    line-height: 1em;
+    /* letter-spacing: 0.5px; */
     text-transform: uppercase;
     opacity: 0.8;
 }
 
 .gh-card-content {
-    max-width: 720px;
-    margin: 0 auto;
+    /* max-width: 50vmax; */
+    margin: 0 1vmax;
     text-align: left;
     /* font-size: 1.6rem; */
     /* font-size:inherit; */
@@ -138,6 +144,17 @@ This is the 'home' page in the Starter theme.
 
 .gh-card-content p {
     font-family: var(--font-serif);
+}
+
+
+@media (min-width: 600px) {
+    .gh-card-link {
+        display: flex;
+        flex-direction: row;
+        
+        
+    }
+
 }
 
 
@@ -167,7 +184,21 @@ This is the 'home' page in the Starter theme.
     .gh-page-head > p {
         font-size: 1.6rem;
     }
+
 }
+
+/* Tring out alternative css responsiveness
+/* ---------------------------------------------------------- */
+/* @media (min-width: 700px) {
+    .gh-card-link {
+
+    }
+
+} */
+
+
+
+
 
 
 /* Post

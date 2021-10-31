@@ -3,7 +3,7 @@
 
 .gh-head {
     padding: 3vmin 4vmin;
-    font-size: var( --font-size-02);
+    font-size: var( --font-size-01);
     line-height: 1.3em;
     background: inherit;
 }
@@ -37,7 +37,7 @@
     display: block;
     padding: 10px 0;
     font-weight: 900;
-    font-size: 1rem;
+    font-size: var(--font-size-03);
     line-height: 1.2em;
 }
 

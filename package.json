@@ -248,6 +248,7 @@
     "get-stream": "^6.0.1",
     "get-value": "^3.0.1",
     "getpass": "^0.1.7",
+    "ghost-cli": "^1.18.0",
     "ghost-ignition": "^4.6.3",
     "glob": "^7.2.0",
     "glob-base": "^0.3.0",

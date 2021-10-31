@@ -50,7 +50,7 @@
     /* * Font scale */
     --font-ratio: 1.2;
     --font-size-00: calc( 1.4rem / var(--font-ratio));
-    --font-size-01: 1rem;
+    --font-size-01: 1.2rem;
     --font-size-02: calc( var(--font-size-01) * var(--font-ratio));
     --font-size-03: calc( var(--font-size-02) * var(--font-ratio));
     --font-size-04: calc( var(--font-size-03) * var(--font-ratio));

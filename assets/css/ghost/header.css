@@ -235,7 +235,7 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner::after {
 /* ---------------------------------------------------------- */
 /* IDs needed to ensure sufficient specificity */
 
-@media (min-width: 900px) {
+@media (max-width: 900px) {
     .gh-burger {
         display: inline-block;
     }
@@ -258,7 +258,7 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner::after {
         user-select: none;
     }
     #gh-head .gh-head-logo {
-        font-size: var(--font-size-01);
+        font-size: var(--font-size-03);
     }
     #gh-head .gh-head-logo img {
         max-height: 40px;

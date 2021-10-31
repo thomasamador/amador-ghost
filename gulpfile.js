@@ -5,7 +5,7 @@ const pump = require('pump');
 var gulp = require('gulp');
 var zip = require('gulp-zip');
 var uglify = require('gulp-uglify');
-var beeper = require('beeper');
+var beeper = import('beeper');
 var browsersync = require('browser-sync').create();
 
 

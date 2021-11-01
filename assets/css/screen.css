@@ -100,7 +100,7 @@ This is the 'home' page in the Starter theme.
 }
 
 .gh-card-image {
-    width: 100%;
+    /* width: 100%;*/
     /* height: 25vmax; */
     max-height: 75vmin;
     max-width: 30vmax;
@@ -152,7 +152,11 @@ This is the 'home' page in the Starter theme.
         display: flex;
         flex-direction: row;
         
-        
+    }
+
+    .gh-card-image {
+        /* max-height: 20vmin; */
+        height: fit-content;
     }
 
 }

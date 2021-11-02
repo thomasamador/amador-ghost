@@ -121,7 +121,7 @@ This is the 'home' page in the Starter theme.
 
 .gh-card-content {
     /* max-width: 50vmax; */
-    margin: 0 1vmax;
+    margin: 0 4vmax;
     text-align: left;
     /* font-size: 1.6rem; */
     /* font-size:inherit; */
@@ -147,6 +147,7 @@ This is the 'home' page in the Starter theme.
 }
 
 
+/* TODO This still needs to be changed to mobile-first settings */
 @media (min-width: 600px) {
     .gh-card-link {
         display: flex;
@@ -157,6 +158,10 @@ This is the 'home' page in the Starter theme.
     .gh-card-image {
         /* max-height: 20vmin; */
         height: fit-content;
+    }
+
+    .gh-card-meta {
+        margin: 0 0 var(--space-m);
     }
 
 }

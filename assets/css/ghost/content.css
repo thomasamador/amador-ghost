@@ -116,6 +116,10 @@
 /* Cards
 /* ---------------------------------------------------------- */
 
+.ag-card-image {
+    max-height: clamp(6rem, 24rem, 30rem);
+}
+
 .gh-content :not(.kg-card):not([id]) + .kg-card {
     margin-top: 6vmin;
 }

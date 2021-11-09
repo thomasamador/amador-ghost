@@ -48,7 +48,7 @@
     font-size: var(--font-size-00);
     text-align: center;
     opacity: 0.5;
-}
+}   
 
 @media (min-width: 700px) {
     .gh-foot-menu .nav {

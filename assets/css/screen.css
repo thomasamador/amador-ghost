@@ -163,10 +163,6 @@ This is the 'home' page in the Starter theme.
         
     }
 
-    .gh-card-image {
-        /* max-height: 20vmin; */
-        height: fit-content;
-    }
 
     .gh-card-meta {
         margin: 0 0 var(--space-m);

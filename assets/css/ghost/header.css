@@ -16,7 +16,7 @@
 .gh-head-inner {
     display: grid;
     grid-gap: 40px;
-    grid-template-columns: 1fr auto 1fr;
+    grid-template-columns: 1fr auto auto;
     grid-auto-flow: row dense;
 }
 
@@ -25,7 +25,7 @@
 /* ---------------------------------------------------------- */
 
 .gh-head-brand {
-    grid-column-start: 2;
+    grid-column-start: 1;
     display: flex;
     align-items: center;
     max-width: 200px;
@@ -37,7 +37,7 @@
     display: block;
     padding: 10px 0;
     font-weight: 900;
-    font-size: var(--font-size-03);
+    font-size: var(--font-size-02);
     line-height: 1.2em;
 }
 
@@ -258,7 +258,7 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner::after {
         user-select: none;
     }
     #gh-head .gh-head-logo {
-        font-size: var(--font-size-03);
+        font-size: var(--font-size-02);
     }
     #gh-head .gh-head-logo img {
         max-height: 40px;

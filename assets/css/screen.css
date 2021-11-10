@@ -113,7 +113,7 @@ This is the 'home' page in the Starter theme.
 
 .gh-card-meta {
     display: block;
-    margin: var(--space-m) 0;
+    margin: var(--space-s) 0;
     font-size: var(--font-size-00);
     line-height: 1em;
     /* letter-spacing: 0.5px; */
@@ -125,7 +125,7 @@ This is the 'home' page in the Starter theme.
 /* * --------------------------------------------------------------------------------- */
 
 .gh-card-content {
-    margin: 0 4vmax;
+    margin-left: var(--space-l);
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -134,37 +134,36 @@ This is the 'home' page in the Starter theme.
 /* * --------------------------------------------------------------------------------- */
 
 
-.gh-card-content p {
-    /* margin: 1.2rem 0; */
-    margin: var(--space-m) 0;
-    /* padding: 0 4vmin; */
-    /* padding: 0 var(--space-s); */
-}
+/* .gh-card-content p {
+    margin: 1.2rem 0;
+    margin: var(--space-s) 0;
+    padding: 0 4vmin;
+    padding: 0 var(--space-s);
+} */
 
- .gh-card-content > strong {
+ /* .gh-card-content > strong {
     display: inline-block;
     padding: 1px 0;
     font-weight: 500;
-    /* box-shadow: 0 -1px 0 0 inset currentColor; */
+    box-shadow: 0 -1px 0 0 inset currentColor;
     opacity: 0.5;
-}
+} */
 
-.gh-card-content p {
+/* .gh-card-content p {
     font-family: var(--font-serif);
-}
+} */
 
 
-/* TODO This still needs to be changed to mobile-first settings */
+/*  */
+
 @media (max-width: 600px) {
     .gh-card-link {
         flex-direction: column;
         justify-content: center;
-        
     }
 
-
-    .gh-card-meta {
-        margin: 0 0 var(--space-m);
+    .gh-card-content {
+        margin: 0;
     }
 
 }
@@ -199,14 +198,6 @@ This is the 'home' page in the Starter theme.
 
 }
 
-/* Tring out alternative css responsiveness
-/* ---------------------------------------------------------- */
-/* @media (min-width: 700px) {
-    .gh-card-link {
-
-    }
-
-} */
 
 
 
@@ -235,9 +226,9 @@ This is the 'home' page in the Starter theme.
 }
 
 .gh-feature-image {
-    grid-column: wide-start / wide-end;
-    width: 100%;
-    margin: 8vmin 0 0;
+    grid-column: main-start / main-end;
+    width: 45vmin;
+    margin: 2vmin auto;
 }
 
 .gh-post-footer {
@@ -285,8 +276,8 @@ This is the 'home' page in the Starter theme.
     transform: rotate(20deg);
 }
 
-@media (max-width: 700px) {
+/* @media (max-width: 700px) {
     .gh-author-meta {
         font-size: 1.6rem;
     }
-}
+} */

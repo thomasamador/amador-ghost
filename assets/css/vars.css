@@ -55,8 +55,8 @@
 
     /* Font size */
     /* -------------------------------------------------------------------------- */
-    --font-ratio: 1.6;
-    --font-size-00: calc( 1.2rem / var(--font-ratio));
+    --font-ratio: 1.3;
+    --font-size-00: calc( 1.4rem / var(--font-ratio));
     --font-size-01: 1rem;
     --font-size-02: calc( var(--font-size-01) * var(--font-ratio));
     --font-size-03: calc( var(--font-size-02) * var(--font-ratio));
@@ -87,6 +87,7 @@
     
     /* Spacing */
     /* -------------------------------------------------------------------------- */
+    --space-xs: .35rem;
     --space-s: .5rem;
     --space-m: 1rem;
     --space-l: 1.5rem;

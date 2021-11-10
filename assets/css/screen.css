@@ -58,7 +58,7 @@ html,
 
 .gh-container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -95,20 +95,28 @@ This is the 'home' page in the Starter theme.
 
 .gh-card-link {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     /* Adding in some more shit 2021.11.09 */
     overflow: hidden;
     position: relative;
-
+    justify-content: center;
+    
 }
+
+/* @media (min-width: 600px) {
+    .gh-card-link {
+        flex-direction: column;
+        justify-content: center;
+    }
+} */
+
+
 
 .gh-card-image {
     width: 100%;
-    max-height: 75vmin;
-    max-width: 20vmax;
+    max-width: 30vmax;
     object-fit: contain;
-    margin-bottom: 4vmin;
-    margin: auto;
+    margin: var(--space-l) auto;
 }
 
 .gh-card-meta {
@@ -125,10 +133,11 @@ This is the 'home' page in the Starter theme.
 /* * --------------------------------------------------------------------------------- */
 
 .gh-card-content {
-    margin-left: var(--space-l);
     text-align: left;
     display: flex;
     flex-direction: column;
+    flex-basis: 4vmin;
+    
     
 }
 /* * --------------------------------------------------------------------------------- */
@@ -141,7 +150,7 @@ This is the 'home' page in the Starter theme.
     padding: 0 var(--space-s);
 } */
 
- /* .gh-card-content > strong {
+/* .gh-card-content > strong {
     display: inline-block;
     padding: 1px 0;
     font-weight: 500;
@@ -156,17 +165,6 @@ This is the 'home' page in the Starter theme.
 
 /*  */
 
-@media (max-width: 600px) {
-    .gh-card-link {
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .gh-card-content {
-        margin: 0;
-    }
-
-}
 
 
 /* Page
@@ -195,7 +193,7 @@ This is the 'home' page in the Starter theme.
     .gh-page-head > p {
         font-size: 1.6rem;
     }
-
+    
 }
 
 
@@ -276,8 +274,20 @@ This is the 'home' page in the Starter theme.
     transform: rotate(20deg);
 }
 
-/* @media (max-width: 700px) {
-    .gh-author-meta {
-        font-size: 1.6rem;
+
+
+@media (min-width: 600px) {
+    .gh-card-content {
+        margin-left: 2rem;
+        flex-basis: 64vmin;
+        align-self: flex-start;
     }
-} */
+    .gh-card-link {
+        flex-direction: row;
+        justify-content: stretch;
+    }
+
+    .gh-card-image {
+        margin: 0;
+    }
+}

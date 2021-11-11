@@ -118,9 +118,6 @@
 /* ---------------------------------------------------------- */
 
 .ag-card-image {
-    align-items: flex-end;
-    flex-shrink: 0;    
-    height: 100%;
     object-fit: contain;
     
 }

@@ -10,8 +10,7 @@
 html {
     overflow-x: hidden;
     overflow-y: scroll;
-    /* ? Do I need to declare a font size on the root HTML element? */
-    /* font-size: 1em; */
+    font-size: 1em;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
@@ -101,7 +100,7 @@ mark {
 }
 
 small {
-    font-size: var(--font-size-00);
+    font-size: 0.875rem;;
 }
 
 sub,

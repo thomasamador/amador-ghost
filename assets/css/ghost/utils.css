@@ -9,9 +9,9 @@
 /* Font size */
     /* -------------------------------------------------------------------------- */
 
-.tex5t-xs {
-        font-size: 0.75rem;
-        line-height: 1rem;
+.text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
 }
 
 .text-sm {
@@ -37,11 +37,6 @@
 .text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
-}
-
-.text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
 }
 
 .text-3xl {

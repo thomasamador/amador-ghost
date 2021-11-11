@@ -140,6 +140,9 @@ a[class]:hover {
 /* * Headings sizes */
 /* ---------------------------------------------------------- */
 
+p {
+    font-family: var(--font-serif);
+}
 h1,
 h2,
 h3,

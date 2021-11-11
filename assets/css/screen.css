@@ -60,7 +60,7 @@ html,
 
 .gh-container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -98,20 +98,49 @@ This is the 'home' page in the Starter theme.
 .gh-card-link {
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
 
+=======
+    /* Adding in some more shit 2021.11.09 */
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+    
+>>>>>>> b8a462bf64108eac10296110037f7b2f56cdba4d
 }
 
+/* @media (min-width: 600px) {
+    .gh-card-link {
+        flex-direction: column;
+        justify-content: center;
+    }
+} */
+
+
+
 .gh-card-image {
+<<<<<<< HEAD
     /* width: 100%; */
     max-height: 75vmin;
     max-width: 20vmax;
     object-fit: contain;
     margin: 0 auto 2rem;
+=======
+    width: 100%;
+    max-width: 30vmax;
+    object-fit: contain;
+    margin: var(--space-l) auto;
+>>>>>>> b8a462bf64108eac10296110037f7b2f56cdba4d
 }
 
 .gh-card-meta {
     display: block;
+<<<<<<< HEAD
     font-size: 0.825rem;
+=======
+    margin: var(--space-s) 0;
+    font-size: var(--font-size-00);
+>>>>>>> b8a462bf64108eac10296110037f7b2f56cdba4d
     line-height: 1em;
     /* letter-spacing: 0.5px; */
     text-transform: uppercase;
@@ -125,23 +154,39 @@ This is the 'home' page in the Starter theme.
     text-align: left;
     display: flex;
     flex-direction: column;
+    flex-basis: 4vmin;
+    
     
 }
 /* * --------------------------------------------------------------------------------- */
 
 
+<<<<<<< HEAD
 .gh-card-content p {
     padding: 1rem 0;
     font-family: var(--font-serif);
 }
+=======
+/* .gh-card-content p {
+    margin: 1.2rem 0;
+    margin: var(--space-s) 0;
+    padding: 0 4vmin;
+    padding: 0 var(--space-s);
+} */
+>>>>>>> b8a462bf64108eac10296110037f7b2f56cdba4d
 
- .gh-card-content > strong {
+/* .gh-card-content > strong {
     display: inline-block;
     padding: 1px 0;
     font-weight: 500;
+<<<<<<< HEAD
+=======
+    box-shadow: 0 -1px 0 0 inset currentColor;
+>>>>>>> b8a462bf64108eac10296110037f7b2f56cdba4d
     opacity: 0.5;
-}
+} */
 
+<<<<<<< HEAD
 
 
     
@@ -159,8 +204,15 @@ This is the 'home' page in the Starter theme.
     .gh-card-meta {
         margin: 0 0 var(--space-m);
     }
+=======
+/* .gh-card-content p {
+    font-family: var(--font-serif);
+} */
 
-}
+
+/*  */
+>>>>>>> b8a462bf64108eac10296110037f7b2f56cdba4d
+
 
 
 /* Page
@@ -189,17 +241,9 @@ This is the 'home' page in the Starter theme.
     .gh-page-head > p {
         font-size: 1.6rem;
     }
-
+    
 }
 
-/* Tring out alternative css responsiveness
-/* ---------------------------------------------------------- */
-/* @media (min-width: 700px) {
-    .gh-card-link {
-
-    }
-
-} */
 
 
 
@@ -229,8 +273,13 @@ This is the 'home' page in the Starter theme.
 
 .gh-feature-image {
     grid-column: main-start / main-end;
+<<<<<<< HEAD
     margin: 8vmin auto;
     
+=======
+    width: 45vmin;
+    margin: 2vmin auto;
+>>>>>>> b8a462bf64108eac10296110037f7b2f56cdba4d
 }
 
 .gh-post-footer {
@@ -278,8 +327,20 @@ This is the 'home' page in the Starter theme.
     transform: rotate(20deg);
 }
 
-@media (max-width: 700px) {
-    .gh-author-meta {
-        font-size: 1.6rem;
+
+
+@media (min-width: 600px) {
+    .gh-card-content {
+        margin-left: 2rem;
+        flex-basis: 64vmin;
+        align-self: flex-start;
+    }
+    .gh-card-link {
+        flex-direction: row;
+        justify-content: stretch;
+    }
+
+    .gh-card-image {
+        margin: 0;
     }
 }

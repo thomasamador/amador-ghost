@@ -36,7 +36,7 @@
 .gh-head-logo {
     display: block;
     padding: 10px 0;
-    font-weight: 900;
+    font-weight: var(--font-bold);
     font-size: var(--font-size-02);
     line-height: 1.2em;
 }

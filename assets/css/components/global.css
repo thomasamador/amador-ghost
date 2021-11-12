@@ -20,10 +20,10 @@ body {
     margin: 0;
     padding: 0;
     color: color-mod(var(--color-base) l(+15%));
-    font-family: var(--font-sans-serif);
-    font-size: 1.2em;
+    font-family: var(--font-sans);
+    font-size: 1em;
     line-height: 1.2em;
-    font-weight: 400;
+    font-weight: var(--font-normal);
     font-style: normal;
     background: #fff;
     scroll-behavior: smooth;
@@ -101,7 +101,7 @@ mark {
 }
 
 small {
-    font-size: var(--font-size-00);
+    font-size: 0.875rem;
 }
 
 sub,
@@ -154,13 +154,13 @@ h6 {
 h1 {
     font-size: 2.25rem;
     line-height: 2.5rem;
-    font-weight: 400;
+    font-weight: var(--font-normal);
 }
 
 h2 {
     font-size: 1.5rem;
     line-height: 2rem;
-    font-weight: 600;
+    font-weight: var(--font-normal);
 }
 
 h3 {

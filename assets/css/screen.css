@@ -38,7 +38,21 @@ html,
     background: #fff;
 }
 
+
+/* Miley build: wrecking ball to flex */
+/* ======================================================================= */
+
 .gh-main {
+    /* display: grid;
+    grid-template-columns:  [full-start] minmax(var(--gap), auto)
+                            [wide-start] minmax(auto, 240px)
+                            [main-start] min(720px, calc(100% - var(--gap)*2))
+                            [main-end] minmax(auto,240px)
+                            [wide-end] minmax(var(--gap), auto)
+                            [full-end]; */
+
+
+
     flex: 1 0 auto;
     display: flex;
     flex-direction: column;
@@ -114,8 +128,10 @@ This is the 'home' page in the Starter theme.
     font-size: 0.825rem;
     line-height: 1em;
     /* letter-spacing: 0.5px; */
+    /* font-family: var(--font-mono); */
     text-transform: uppercase;
-    opacity: 0.8;
+    /* opacity: 0.8; */
+    margin-top: 1.5rem;
 }
 
 /* * Card content styling! */
@@ -125,14 +141,15 @@ This is the 'home' page in the Starter theme.
     text-align: left;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     
 }
 /* * --------------------------------------------------------------------------------- */
 
 
 .gh-card-content p {
-    padding: 1rem 0;
-    font-family: var(--font-serif);
+    padding: .5rem 0;
+    font-family: var(--font-sans);
 }
 
  .gh-card-content > strong {
@@ -157,7 +174,8 @@ This is the 'home' page in the Starter theme.
         margin-left: 2rem;
     }
     .gh-card-meta {
-        margin: 0 0 var(--space-m);
+        /* margin: 0 0 var(--space-m); */
+        margin-top: 1rem;
     }
 
 }
@@ -218,7 +236,8 @@ This is the 'home' page in the Starter theme.
     display: block;
     margin: 0 0 1rem;
     font-size: 1.4rem;
-    letter-spacing: 0.5px;
+    font-family: var(--font-mono);
+    /* letter-spacing: 0.5px; */
     text-transform: uppercase;
     opacity: 0.8;
 }

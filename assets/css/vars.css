@@ -44,11 +44,12 @@
 
     /* Fonts */
     /* -------------------------------------------------------------------------- */
-    --font-sans: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    --font-serif: Georgia, Times, serif;
-    --font-mono: 'Fira Code', Courier, monospace;
+    --font-sans: 'Barlow', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    --font-serif: 'PT Serif', Georgia, Times, serif;
+    --font-mono: 'Inconsolata', Courier, monospace;
     --font-light: 100;
     --font-normal: 400;
+    --font-medium: 600;
     --font-bold: 700;
     --font-heavy: 800;
 
